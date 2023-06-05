@@ -1,0 +1,39 @@
+.father {
+  // 方法一: text-align + line-height (没成功)
+  //text-align: center;
+  //line-height: 300px;
+
+  // 方法二：absolute + margin
+  //position: relative;
+
+  //方法三：absolute + transform
+  //position: relative;
+
+  // 方法四: flex
+  display: flex;
+  align-items: center; // 定义项目在交叉轴上如何对齐，对于默认的flex-direction就是垂直居中；
+  justify-content: center; // 定义了项目在主轴上的对齐方式，对于默认的flex-direction就是水平居中；
+  width: 300px;
+  height: 300px;
+  background-color: #2baee9;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+
+  // 方法二
+  //position: absolute;
+  //top: 0;
+  //right: 0;
+  //bottom: 0;
+  //left: 0;
+  //margin: auto;
+
+  // 方法三
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
+}
